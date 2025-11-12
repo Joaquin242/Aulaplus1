@@ -1,0 +1,176 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.aulaplus"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- La cámara NO es obligatoria -->
+12    <uses-feature
+12-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:8:5-10:36
+13        android:name="android.hardware.camera"
+13-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:9:9-47
+14        android:required="false" />
+14-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:10:9-33
+15
+16    <!-- Permisos -->
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:13:5-65
+17-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:13:22-62
+18    <!-- Para Android 12 e inferiores; en Android 13+ usaremos Photo Picker (sin permiso) -->
+19    <uses-permission
+19-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:15:5-17:38
+20        android:name="android.permission.READ_EXTERNAL_STORAGE"
+20-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:16:9-64
+21        android:maxSdkVersion="32" />
+21-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:17:9-35
+22
+23    <permission
+23-->[androidx.core:core:1.13.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.aulaplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.13.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.13.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.aulaplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.13.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.13.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:19:5-47:19
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.13.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+31        android:dataExtractionRules="@xml/data_extraction_rules"
+31-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:23:9-65
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:fullBackupContent="@xml/backup_rules"
+34-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:24:9-54
+35        android:icon="@mipmap/ic_launcher"
+35-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:20:9-43
+36        android:label="Aulaplus"
+36-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:21:9-33
+37        android:testOnly="true"
+38        android:theme="@style/Theme.Aulaplus" >
+38-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:22:9-46
+39        <activity
+39-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:27:9-34:20
+40            android:name="com.example.aulaplus.MainActivity"
+40-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:28:13-41
+41            android:exported="true" >
+41-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:29:13-36
+42            <intent-filter>
+42-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:30:13-33:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:31:17-69
+43-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:31:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:32:17-77
+45-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:32:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <!-- FileProvider para compartir la foto con la cámara -->
+50        <provider
+51            android:name="androidx.core.content.FileProvider"
+51-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:38:13-62
+52            android:authorities="com.example.aulaplus.fileprovider"
+52-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:39:13-64
+53            android:exported="false"
+53-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:40:13-37
+54            android:grantUriPermissions="true" >
+54-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:41:13-47
+55            <meta-data
+55-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:42:13-44:54
+56                android:name="android.support.FILE_PROVIDER_PATHS"
+56-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:43:17-67
+57                android:resource="@xml/file_paths" />
+57-->C:\Users\jotap\Downloads\Aulaplus\Aulaplus\app\src\main\AndroidManifest.xml:44:17-51
+58        </provider>
+59
+60        <activity
+60-->[androidx.compose.ui:ui-tooling-android:1.7.2] C:\Users\jotap\.gradle\caches\8.11.1\transforms\a0b467e694dc37bb6b4f721bfe4f1f4c\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+61            android:name="androidx.compose.ui.tooling.PreviewActivity"
+61-->[androidx.compose.ui:ui-tooling-android:1.7.2] C:\Users\jotap\.gradle\caches\8.11.1\transforms\a0b467e694dc37bb6b4f721bfe4f1f4c\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+62            android:exported="true" />
+62-->[androidx.compose.ui:ui-tooling-android:1.7.2] C:\Users\jotap\.gradle\caches\8.11.1\transforms\a0b467e694dc37bb6b4f721bfe4f1f4c\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jotap\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jotap\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+66            android:authorities="com.example.aulaplus.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jotap\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jotap\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jotap\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jotap\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jotap\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\jotap\.gradle\caches\8.11.1\transforms\8b2eae8560698e6b0717b27c7fa0d9c2\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\jotap\.gradle\caches\8.11.1\transforms\8b2eae8560698e6b0717b27c7fa0d9c2\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:30:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\jotap\.gradle\caches\8.11.1\transforms\8b2eae8560698e6b0717b27c7fa0d9c2\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+76                android:value="androidx.startup" />
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+77        </provider>
+78
+79        <activity
+79-->[androidx.compose.ui:ui-test-manifest:1.7.2] C:\Users\jotap\.gradle\caches\8.11.1\transforms\19d910353bd9e6d434864343d3e7e5b0\transformed\ui-test-manifest-1.7.2\AndroidManifest.xml:23:9-25:39
+80            android:name="androidx.activity.ComponentActivity"
+80-->[androidx.compose.ui:ui-test-manifest:1.7.2] C:\Users\jotap\.gradle\caches\8.11.1\transforms\19d910353bd9e6d434864343d3e7e5b0\transformed\ui-test-manifest-1.7.2\AndroidManifest.xml:24:13-63
+81            android:exported="true" />
+81-->[androidx.compose.ui:ui-test-manifest:1.7.2] C:\Users\jotap\.gradle\caches\8.11.1\transforms\19d910353bd9e6d434864343d3e7e5b0\transformed\ui-test-manifest-1.7.2\AndroidManifest.xml:25:13-36
+82
+83        <receiver
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+84            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+85            android:directBootAware="false"
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+86            android:enabled="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+87            android:exported="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+88            android:permission="android.permission.DUMP" >
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+90                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+93                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+96                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+99                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jotap\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+100            </intent-filter>
+101        </receiver>
+102    </application>
+103
+104</manifest>
